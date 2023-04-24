@@ -1,0 +1,50 @@
+<!-- 
+    Block형 : 하나의 라인 전체를 차지
+             width, height 조절 o
+             margin, top, right, bottom, left : o
+                         
+    Inline형 : 하나의 라인을 해당 태그가 공유
+              width, height 조절 x
+              margin, top, bottom = x left, right : o
+              padding : o
+
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: orange;
+            width : 500px;
+            height: 200px;
+            border : 1px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        span{
+            background-color: royalblue;
+            width : 500px;
+            height: 200px;
+            margin: 20px;
+            padding: 50px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Block(한라인을 혼자 쓰는 경우) --> 
+    <div>TEST</div>
+    <hr/>
+    <!-- Inline -->
+    <span>TEST</span>
+    
+</body>
+</html>
