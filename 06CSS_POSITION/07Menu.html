@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin:0px;}
+        ul{
+            list-style:none;
+            padding:0px;
+        }
+        header{
+            height: 90px;
+            /* line-height: 90px; */
+            /* border:1px solid gray; */
+            border-bottom:1px solid lightgray;
+            display: flex;
+            justify-content: space-between;
+            position:relative;
+            padding:0 120px;
+        }
+        header>.header--logo{
+            width:90px;
+            /* height: 55px; */
+            display:flex;
+            /* align-items: center; */
+        }
+        header>.header--logo>img{
+
+
+        }
+
+        /* 헤더 GNB */
+        header>.gnb{
+            /* border:1px solid red; */
+            width:1200px;
+        }
+        header>.gnb>.one--depth{
+            width:100%;
+            display:flex;
+            justify-content: right;
+            margin:0px;
+        }
+        header>.gnb>.one--depth>li{
+            width:120px;
+            height:90px;
+            /* line-height:90px; */
+            /* border:1px solid gray; */
+            text-align: center;
+
+            position:relative;
+        }
+        header>.gnb>.one--depth>li>a{
+            display:block;
+            line-height: 90px;
+        }
+        header>.gnb>.one--depth>li>.two--depth{
+            /* border:1px solid gray; */
+            position:absolute;
+            top:90px;
+            left:0px;
+            width:100%;
+            display: none;
+            
+        }
+        header>.gnb>.one--depth>li>.two--depth>li{
+            height:35px;
+        }
+        header>.gnb>.one--depth>li>.two--depth>li>a{}
+
+        header>.gnb>.one--depth>li:hover>.two--depth{
+            display:block;
+        }
+        header>.gnb>.one--depth>li>.two--depth>li{
+            /* content:'🥐'; */
+            /* position:absolute; */
+            /* background-image: url(); */
+        }
+
+        header>.gnb--link{}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="header--logo">
+            <img src="http://www.mjvisiontech.com/theme/mj/img/common/logo.svg" alt="">
+        </div>
+            
+        <nav class="gnb">
+            <ul class="one--depth">
+                <li>
+                    <a href="">About</a>
+                    <ul class="two--depth">
+                        <li><a href="">Submenu1</a></li>
+                        <li><a href="">Submenu2</a></li>
+                        <li><a href="">Submenu3</a></li>
+                        <li><a href="">Submenu4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Technology</a>
+                    <ul class="two--depth">
+                        <li><a href="">Submenu1</a></li>
+                        <li><a href="">Submenu2</a></li>
+                        <li><a href="">Submenu3</a></li>
+                        <li><a href="">Submenu4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Product</a>
+                    <ul class="two--depth">
+                        <li><a href="">Submenu1</a></li>
+                        <li><a href="">Submenu2</a></li>
+                        <li><a href="">Submenu3</a></li>
+                        <li><a href="">Submenu4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Support</a>
+                    <ul class="two--depth">
+                        <li><a href="">Submenu1</a></li>
+                        <li><a href="">Submenu2</a></li>
+                        <li><a href="">Submenu3</a></li>
+                        <li><a href="">Submenu4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="gnb--link">GNB-link</div>
+    </header>
+</body>
+</html>
